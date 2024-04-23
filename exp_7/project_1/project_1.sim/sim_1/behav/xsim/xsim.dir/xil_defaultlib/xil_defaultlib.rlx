@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.v,1699944681,verilog,,S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache_tb.v,,cache;main_mem,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache_tb.v,1699944663,verilog,,,,cache_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_7/lab7/mem32b.v,1700016559,verilog,,S:/univer/sem2_1/digital_experiment/exp_7/lab7/mem8b.v,,mem32b,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_7/lab7/mem8b.v,1699612818,verilog,,S:/univer/sem2_1/digital_experiment/exp_7/lab7/men32b_tb.v,,mem8b,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_7/lab7/men32b_tb.v,1699501608,verilog,,,,men32b_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_7/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

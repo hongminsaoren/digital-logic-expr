@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 19 14:22:24 2023
+# Process ID: 5716
+# Current directory: S:/univer/sem2_1/digital experiment/project_1/project_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source S:/univer/sem2_1/digital experiment/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/hamming7check_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: S:/univer/sem2_1/digital experiment/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: S:/univer/sem2_1/digital experiment/project_1/project_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source S:/univer/sem2_1/digital -notrace

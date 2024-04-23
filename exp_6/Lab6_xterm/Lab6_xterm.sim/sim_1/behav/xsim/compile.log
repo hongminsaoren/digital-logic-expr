@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.gen/sources_1/ip/vga_mem/sim/vga_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/Cal_Addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cal_Addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/FontLibrary_ASCII.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FontLibrary_ASCII
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGACtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGACtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGADisplay
+INFO: [VRFC 10-2458] undeclared symbol pix_valid, assumed default net type wire [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADisplay.v:42]
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADraw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGADraw
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VMemCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VMemCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VedioMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VedioMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7decimal
+INFO: [VRFC 10-311] analyzing module keyboard
+INFO: [VRFC 10-311] analyzing module ps2_keyboard
+INFO: [VRFC 10-311] analyzing module scancode_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xterm
+INFO: [VRFC 10-2458] undeclared symbol LEd, assumed default net type wire [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:48]
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

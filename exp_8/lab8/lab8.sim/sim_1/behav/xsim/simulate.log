@@ -1,0 +1,83 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+---Begin test case                   rv32ui-p-add-----
+OK:test case                   rv32ui-p-add finshed OK at cycle         456.
+---Begin test case                  rv32ui-p-addi-----
+OK:test case                  rv32ui-p-addi finshed OK at cycle         233.
+---Begin test case                   rv32ui-p-and-----
+OK:test case                   rv32ui-p-and finshed OK at cycle         476.
+---Begin test case                  rv32ui-p-andi-----
+OK:test case                  rv32ui-p-andi finshed OK at cycle         189.
+---Begin test case                 rv32ui-p-auipc-----
+OK:test case                 rv32ui-p-auipc finshed OK at cycle          50.
+---Begin test case                   rv32ui-p-beq-----
+OK:test case                   rv32ui-p-beq finshed OK at cycle         282.
+---Begin test case                   rv32ui-p-bge-----
+OK:test case                   rv32ui-p-bge finshed OK at cycle         300.
+---Begin test case                  rv32ui-p-bgeu-----
+OK:test case                  rv32ui-p-bgeu finshed OK at cycle         325.
+---Begin test case                   rv32ui-p-blt-----
+OK:test case                   rv32ui-p-blt finshed OK at cycle         282.
+---Begin test case                  rv32ui-p-bltu-----
+OK:test case                  rv32ui-p-bltu finshed OK at cycle         307.
+---Begin test case                   rv32ui-p-bne-----
+OK:test case                   rv32ui-p-bne finshed OK at cycle         282.
+---Begin test case                   rv32ui-p-jal-----
+OK:test case                   rv32ui-p-jal finshed OK at cycle          46.
+---Begin test case                  rv32ui-p-jalr-----
+OK:test case                  rv32ui-p-jalr finshed OK at cycle         106.
+---Begin test case                    rv32ui-p-lb-----
+OK:test case                    rv32ui-p-lb finshed OK at cycle         236.
+---Begin test case                   rv32ui-p-lbu-----
+OK:test case                   rv32ui-p-lbu finshed OK at cycle         236.
+---Begin test case                    rv32ui-p-lh-----
+OK:test case                    rv32ui-p-lh finshed OK at cycle         248.
+---Begin test case                   rv32ui-p-lhu-----
+OK:test case                   rv32ui-p-lhu finshed OK at cycle         255.
+---Begin test case                   rv32ui-p-lui-----
+OK:test case                   rv32ui-p-lui finshed OK at cycle          56.
+---Begin test case                    rv32ui-p-lw-----
+OK:test case                    rv32ui-p-lw finshed OK at cycle         258.
+---Begin test case                    rv32ui-p-or-----
+OK:test case                    rv32ui-p-or finshed OK at cycle         479.
+---Begin test case                   rv32ui-p-ori-----
+OK:test case                   rv32ui-p-ori finshed OK at cycle         196.
+---Begin test case                    rv32ui-p-sb-----
+OK:test case                    rv32ui-p-sb finshed OK at cycle         421.
+---Begin test case                    rv32ui-p-sh-----
+OK:test case                    rv32ui-p-sh finshed OK at cycle         474.
+---Begin test case                   rv32ui-p-sll-----
+OK:test case                   rv32ui-p-sll finshed OK at cycle         484.
+---Begin test case                  rv32ui-p-slli-----
+OK:test case                  rv32ui-p-slli finshed OK at cycle         232.
+---Begin test case                   rv32ui-p-slt-----
+OK:test case                   rv32ui-p-slt finshed OK at cycle         450.
+---Begin test case                  rv32ui-p-slti-----
+OK:test case                  rv32ui-p-slti finshed OK at cycle         228.
+---Begin test case                 rv32ui-p-sltiu-----
+OK:test case                 rv32ui-p-sltiu finshed OK at cycle         228.
+---Begin test case                  rv32ui-p-sltu-----
+OK:test case                  rv32ui-p-sltu finshed OK at cycle         450.
+---Begin test case                   rv32ui-p-sra-----
+OK:test case                   rv32ui-p-sra finshed OK at cycle         503.
+---Begin test case                  rv32ui-p-srai-----
+OK:test case                  rv32ui-p-srai finshed OK at cycle         247.
+---Begin test case                   rv32ui-p-srl-----
+OK:test case                   rv32ui-p-srl finshed OK at cycle         497.
+---Begin test case                  rv32ui-p-srli-----
+OK:test case                  rv32ui-p-srli finshed OK at cycle         241.
+---Begin test case                   rv32ui-p-sub-----
+OK:test case                   rv32ui-p-sub finshed OK at cycle         448.
+---Begin test case                    rv32ui-p-sw-----
+OK:test case                    rv32ui-p-sw finshed OK at cycle         481.
+---Begin test case                rv32ui-p-simple-----
+OK:test case                rv32ui-p-simple finshed OK at cycle          32.
+---Begin test case                rv32ui-p-simple-----
+OK:test case                rv32ui-p-simple finshed OK at cycle          32.
+---Begin test case                   rv32ui-p-xor-----
+OK:test case                   rv32ui-p-xor finshed OK at cycle         478.
+---Begin test case                   rv32ui-p-beq-----
+OK:test case                   rv32ui-p-beq finshed OK at cycle         282.
+---Begin test case                  rv32ui-p-xori-----
+OK:test case                  rv32ui-p-xori finshed OK at cycle         198.
+$stop called at time : 235960 ns : File "S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU_tb.v" Line 285

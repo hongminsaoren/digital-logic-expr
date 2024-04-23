@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct 23 20:52:11 2023
+# Process ID: 14164
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_5/project_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8580 S:\univer\sem2_1\digital_experiment\exp_5\project_5\lab5.xpr
+# Log file: S:/univer/sem2_1/digital_experiment/exp_5/project_5/vivado.log
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_5/project_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.xpr
+update_compile_order -fileset sources_1

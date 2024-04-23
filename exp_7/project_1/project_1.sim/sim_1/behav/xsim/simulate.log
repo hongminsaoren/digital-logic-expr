@@ -1,0 +1,57 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+=========================================================
+Test begin!
+=========================================================
+Test index           0
+The data written is 2223298057 and the data read is 2223298057
+The data written is 1189058957 and the data read is 1189058957
+The data written is   15983361 and the data read is   15983361
+The data written is  512609597 and the data read is  512609597
+=========================================================
+Test index           1
+The data written is 2097015289 and the data read is 2097015289
+The data written is 3574846122 and the data read is 3574846122
+The data written is 2301810194 and the data read is 2301810194
+The data written is 3883308750 and the data read is 3883308750
+=========================================================
+Test index           2
+The data written is  777537884 and the data read is  777537884
+The data written is 2997298789 and the data read is 2997298789
+The data written is 3225100928 and the data read is 3225100928
+The data written is 3469528221 and the data read is 3469528221
+=========================================================
+Test index           3
+The data written is 2260482061 and the data read is 2260482061
+The data written is 3936758485 and the data read is 3936758485
+The data written is  251652381 and the data read is  251652381
+The data written is   84501770 and the data read is   84501770
+=========================================================
+Test index           4
+The data written is 2036907506 and the data read is 2036907506
+The data written is 3964351704 and the data read is 3964351704
+The data written is 1975848427 and the data read is 1975848427
+The data written is 1460999086 and the data read is 1460999086
+=========================================================
+Test index           5
+The data written is 2245499403 and the data read is 2245499403
+The data written is  670192975 and the data read is  670192975
+The data written is 3206754942 and the data read is 3206754942
+The data written is 1822182361 and the data read is 1822182361
+=========================================================
+Test index           6
+The data written is 1335973279 and the data read is 1335973279
+The data written is 3687669943 and the data read is 3687669943
+The data written is 2915811419 and the data read is 2915811419
+The data written is 3894623952 and the data read is 3894623952
+=========================================================
+Test index           7
+The data written is 1260466070 and the data read is 1260466070
+The data written is 1683484104 and the data read is 1683484104
+The data written is  151837458 and the data read is  151837458
+The data written is  484042553 and the data read is  484042553
+=========================================================
+Test end!
+----PASS!!!
+=========================================================
+$finish called at time : 6430 ns : File "S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache_tb.v" Line 75

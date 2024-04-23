@@ -1,0 +1,4 @@
+Running: xsim.dir/trans4to4_tb_behav/xsimk.exe -simmode gui -wdb trans4to4_tb_behav.wdb -simrunnum 0 -socket 64971
+Design successfully loaded
+Design Loading Memory Usage: 8876 KB (Peak: 8876 KB)
+Design Loading CPU Usage: 0 ms

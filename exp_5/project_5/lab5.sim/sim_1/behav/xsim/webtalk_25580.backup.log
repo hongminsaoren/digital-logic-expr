@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 18 23:16:19 2023
+# Process ID: 25580
+# Current directory: C:/Users/HP/Desktop/lab5/lab5/lab5.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/HP/Desktop/lab5/lab5/lab5.sim/sim_1/behav/xsim/xsim.dir/KeyBoardReceiver_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/HP/Desktop/lab5/lab5/lab5.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/HP/Desktop/lab5/lab5/lab5.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/HP/Desktop/lab5/lab5/lab5.sim/sim_1/behav/xsim/xsim.dir/KeyBoardReceiver_tb_behav/webtalk/xsim_webtalk.tcl -notrace

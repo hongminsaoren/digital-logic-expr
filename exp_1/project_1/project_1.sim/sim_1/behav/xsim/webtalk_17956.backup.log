@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 19 16:04:51 2023
+# Process ID: 17956
+# Current directory: S:/univer/sem2_1/digital experiment/exp_1/project_1/project_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source S:/univer/sem2_1/digital experiment/exp_1/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/trans4to4_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: S:/univer/sem2_1/digital experiment/exp_1/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: S:/univer/sem2_1/digital experiment/exp_1/project_1/project_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source S:/univer/sem2_1/digital -notrace
+couldn't read file "S:/univer/sem2_1/digital": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 19 16:04:51 2023...

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 29 16:42:59 2023
+# Process ID: 43912
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_8/lab8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent48872 S:\univer\sem2_1\digital_experiment\exp_8\lab8\lab8.xpr
+# Log file: S:/univer/sem2_1/digital_experiment/exp_8/lab8/vivado.log
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_8/lab8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source SingleCycleCPU_tb.tcl
+open_run synth_1 -name synth_1
+close_sim

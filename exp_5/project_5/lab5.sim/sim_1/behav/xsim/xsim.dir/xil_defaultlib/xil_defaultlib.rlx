@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+S:/univer/sem2_1/digital_experiment/exp_5/lab5/KeyBoardReceiver.v,1698052551,verilog,,S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.srcs/sources_1/new/KeyBoardSend.v,,KeyBoardReceiver,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_5/lab5/MouseReceiver.v,1698052551,verilog,,S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.srcs/sim_1/new/KeyBoardReceiver_tb.v,,MouseReceiver;debouncer;seg7decima,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.sim/sim_1/behav/xsim/glbl.v,1698063895,verilog,,,,glbl,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.srcs/sim_1/new/KeyBoardReceiver_tb.v,1698063895,verilog,,,,KeyBoardReceiver_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.srcs/sources_1/new/KeyBoardSend.v,1698063895,verilog,,S:/univer/sem2_1/digital_experiment/exp_5/lab5/MouseReceiver.v,,KeyBoardSend,,,,,,,,

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 28 14:09:22 2023
+# Process ID: 46112
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_8/lab8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2692 S:\univer\sem2_1\digital_experiment\exp_8\lab8\lab8.xpr
+# Log file: S:/univer/sem2_1/digital_experiment/exp_8/lab8/vivado.log
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_8/lab8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.xpr
+uupdate_compile_order -fileset sources_1open_hw_manager
+launch_simulation
+source SingleCycleCPU_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+source SingleCycleCPU_tb.tcl
+close_sim

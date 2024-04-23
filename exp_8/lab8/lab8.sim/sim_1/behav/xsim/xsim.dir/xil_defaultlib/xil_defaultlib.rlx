@@ -1,0 +1,20 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v,1700564964,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/ALUcontrol.v,,ALU32,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v,1699947892,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/BranchControl.v,,Adder32;CLA_16;CLA_group;CLU;FA_PG,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/BranchControl.v,1699947892,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v,,BranchControl,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v,1700561666,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v,,Control,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v,1700557770,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrMem.v,,DataMem,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrMem.v,1700550828,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrParse.v,,InstrMem,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrParse.v,1699961930,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrToImm.v,,InstrParse,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrToImm.v,1699976568,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU.v,,InstrToImm,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU.v,1700567244,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/barrelsft32.v,,SingleCycleCPU,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU_tb.v,1700569134,verilog,,,,SingleCycleCPU_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/barrelsft32.v,1699947892,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/mux_3to8.v,,barrelsft32,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.sim/sim_1/behav/xsim/glbl.v,1605673890,verilog,,,,glbl,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/ALUcontrol.v,1699949536,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v,,ALUcontrol,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/mux_3to8.v,1699949536,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/nextPC.v,,mux_3to8,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/nextPC.v,1700566740,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/regfile32.v,,nextPC,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_8/lab8/regfile32.v,1700303068,verilog,,S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU_tb.v,,regfile32,,,,,,,,

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32
+INFO: [VRFC 10-311] analyzing module CLA_16
+INFO: [VRFC 10-311] analyzing module CLA_group
+INFO: [VRFC 10-311] analyzing module CLU
+INFO: [VRFC 10-311] analyzing module FA_PG
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_3/lab3/barrelsft32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrelsft32
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32_tb

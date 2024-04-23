@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+S:/univer/sem2_1/digital experiment/exp_1/lab1/dec7seg.v,1695176454,verilog,,S:/univer/sem2_1/digital experiment/exp_1/lab1/hamming7check_tb.v,,dec7seg,,,,,,,,
+S:/univer/sem2_1/digital experiment/exp_1/lab1/dec7seg_tb.v,1694594941,verilog,,,,dec7seg_tb,,,,,,,,
+S:/univer/sem2_1/digital experiment/exp_1/lab1/hamming7check.v,1695104616,verilog,,S:/univer/sem2_1/digital experiment/exp_1/lab1/dec7seg.v,,hamming7check,,,,,,,,
+S:/univer/sem2_1/digital experiment/exp_1/lab1/hamming7check_tb.v,1694594941,verilog,,S:/univer/sem2_1/digital experiment/exp_1/lab1/trans4to4_tb.v,,hamming7check_tb,,,,,,,,
+S:/univer/sem2_1/digital experiment/exp_1/lab1/trans4to4.v,1694676763,verilog,,S:/univer/sem2_1/digital experiment/exp_1/lab1/dec7seg.v,,trans4to4,,,,,,,,
+S:/univer/sem2_1/digital experiment/exp_1/lab1/trans4to4_tb.v,1694594941,verilog,,S:/univer/sem2_1/digital experiment/exp_1/lab1/dec7seg_tb.v,,trans4to4_tb,,,,,,,,
+S:/univer/sem2_1/digital experiment/exp_1/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

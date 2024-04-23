@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../lab1/hamming7check.v" \
+"../../../../../lab1/trans4to4.v" \
+"../../../../../lab1/dec7seg.v" \
+"../../../../../lab1/hamming7check_tb.v" \
+"../../../../../lab1/trans4to4_tb.v" \
+"../../../../../lab1/dec7seg_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,443 @@
+
+*** Running vivado
+    with args -log rv32m_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rv32m_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source rv32m_top.tcl -notrace
+Command: synth_design -top rv32m_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31984
+WARNING: [Synth 8-2507] parameter declaration becomes local in mul_32b with formal parameter declaration list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32b.v:40]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1006.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rv32m_top' [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.v:23]
+	Parameter update_interval bound to: 119999 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rv32m' [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div_32u' [S:/univer/sem2_1/digital_experiment/exp_4/lab4/div_32u.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'div_32u' (1#1) [S:/univer/sem2_1/digital_experiment/exp_4/lab4/div_32u.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul_32b' [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32b.v:24]
+	Parameter DATAWIDTH bound to: 32 - type: integer 
+	Parameter READ bound to: 2'b00 
+	Parameter ADD bound to: 2'b01 
+	Parameter SHIFT bound to: 2'b11 
+	Parameter OUTPUT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'mul_32b' (2#1) [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32b.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mul_32k' [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:23]
+WARNING: [Synth 8-324] index -1 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -2 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -3 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -4 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -5 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -6 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -7 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -8 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -9 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -10 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -11 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -12 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -13 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -14 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -15 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -16 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -17 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -18 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -19 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -20 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -21 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -22 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -23 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -24 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -25 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -26 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -27 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -28 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -29 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -30 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -31 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -1 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -2 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -3 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -4 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -5 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -6 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -7 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -8 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -9 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -10 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -11 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -12 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -13 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -14 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -15 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -16 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -17 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -18 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -19 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -20 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -21 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -22 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -23 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -24 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -25 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -26 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -27 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -28 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -29 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -30 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -1 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -2 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -3 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -4 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -5 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -6 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -7 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -8 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -9 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -10 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -11 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -12 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -13 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -14 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -15 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -16 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -17 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -18 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -19 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -20 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -21 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -22 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -23 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -24 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -25 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -26 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -27 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -28 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -29 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -1 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -2 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -3 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -4 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -5 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -6 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -7 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -8 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -9 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+WARNING: [Synth 8-324] index -10 out of range [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:41]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-567] referenced signal 'part' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'mul_32k' (3#1) [S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v:23]
+WARNING: [Synth 8-567] referenced signal 'rst' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+WARNING: [Synth 8-567] referenced signal 'in_error' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+WARNING: [Synth 8-567] referenced signal 'multi_sign' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+WARNING: [Synth 8-567] referenced signal 'multi_unsign' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+WARNING: [Synth 8-567] referenced signal 'div' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+WARNING: [Synth 8-567] referenced signal 'rs2' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+WARNING: [Synth 8-567] referenced signal 'rs1' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+WARNING: [Synth 8-567] referenced signal 'mod' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'rv32m' (4#1) [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:23]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'rv32m_top' (5#1) [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.316 . Memory (MB): peak = 1006.621 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'funct3[3]'. [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rv32m_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rv32m_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1149.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1149.902 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1149.902 ; gain = 143.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1149.902 ; gain = 143.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1149.902 ; gain = 143.281
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'rd_reg' [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'out_valid_reg' [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 1149.902 ; gain = 143.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   66 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 1     
+	  29 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 131   
+	  30 Input   32 Bit       Adders := 4     
+	  23 Input   32 Bit       Adders := 4     
+	  31 Input   32 Bit       Adders := 4     
+	  32 Input   32 Bit       Adders := 4     
+	  33 Input   32 Bit       Adders := 2     
+	  28 Input   32 Bit       Adders := 4     
+	  27 Input   32 Bit       Adders := 4     
+	  26 Input   32 Bit       Adders := 4     
+	  22 Input   32 Bit       Adders := 4     
+	  25 Input   32 Bit       Adders := 4     
+	  24 Input   32 Bit       Adders := 4     
+	  21 Input   32 Bit       Adders := 4     
+	  20 Input   32 Bit       Adders := 4     
+	  19 Input   32 Bit       Adders := 4     
+	  17 Input   32 Bit       Adders := 4     
+	  18 Input   32 Bit       Adders := 4     
+	  16 Input   32 Bit       Adders := 4     
+	  15 Input   32 Bit       Adders := 4     
+	  14 Input   32 Bit       Adders := 4     
+	  13 Input   32 Bit       Adders := 4     
+	  12 Input   32 Bit       Adders := 4     
+	  11 Input   32 Bit       Adders := 4     
+	  10 Input   32 Bit       Adders := 4     
+	   9 Input   32 Bit       Adders := 4     
+	   8 Input   32 Bit       Adders := 4     
+	   7 Input   32 Bit       Adders := 4     
+	   6 Input   32 Bit       Adders := 4     
+	   5 Input   32 Bit       Adders := 4     
+	   4 Input   32 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 253   
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               66 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   3 Input   66 Bit        Muxes := 2     
+	   4 Input   66 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	   4 Input   32 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 258   
+	   4 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP rd1, operation Mode is: A*B.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+DSP Report: Generating DSP rd1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+DSP Report: Generating DSP rd1, operation Mode is: A*B.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+DSP Report: Generating DSP rd1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+DSP Report: operator rd1 is absorbed into DSP rd1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:46 . Memory (MB): peak = 1149.902 ; gain = 143.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|rv32m_top   | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rv32m_top   | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rv32m_top   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rv32m_top   | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:52 . Memory (MB): peak = 1149.902 ; gain = 143.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:52 . Memory (MB): peak = 1149.902 ; gain = 143.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:53 . Memory (MB): peak = 1178.816 ; gain = 172.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:55 . Memory (MB): peak = 1192.543 ; gain = 185.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:55 . Memory (MB): peak = 1192.543 ; gain = 185.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1192.543 ; gain = 185.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1192.543 ; gain = 185.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1192.543 ; gain = 185.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1192.543 ; gain = 185.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |  1934|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |  1721|
+|5     |LUT2    |   274|
+|6     |LUT3    |  1155|
+|7     |LUT4    |   232|
+|8     |LUT5    |   219|
+|9     |LUT6    |   448|
+|10    |MUXF7   |     5|
+|11    |FDCE    |   272|
+|12    |FDPE    |     1|
+|13    |FDRE    |   150|
+|14    |FDSE    |     8|
+|15    |LDC     |    33|
+|16    |IBUF    |    14|
+|17    |OBUF    |    33|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1192.543 ; gain = 185.922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:51 . Memory (MB): peak = 1192.543 ; gain = 42.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1192.543 ; gain = 185.922
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1192.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1975 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1192.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  LDC => LDCE: 33 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 113 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:01:01 . Memory (MB): peak = 1192.543 ; gain = 185.922
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'S:/univer/sem2_1/digital_experiment/exp_4/project_4/project_4.runs/synth_1/rv32m_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rv32m_top_utilization_synth.rpt -pb rv32m_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 19 00:25:17 2023...

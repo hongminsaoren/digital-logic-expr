@@ -1,0 +1,141 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 21 18:30:39 2023
+# Process ID: 11968
+# Current directory: C:/Users/HP/Desktop/lab5/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11420 C:\Users\HP\Desktop\lab5\lab5\lab5.xpr
+# Log file: C:/Users/HP/Desktop/lab5/lab5/vivado.log
+# Journal file: C:/Users/HP/Desktop/lab5/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/HP/Desktop/lab5/lab5/lab5.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/HP/Desktop/lab5/lab5/lab5.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/HP/Desktop/lab5/KeyboardSim.xdc]
+set_property is_enabled true [get_files  C:/Users/HP/Desktop/lab5/MouseReceiver.xdc]
+set_property top MouseReceiver [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct 21 18:32:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/synth_1/runme.log
+[Sat Oct 21 18:32:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.008 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292743884A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct 21 18:36:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+ERROR: [Common 17-69] Command failed:  Run'impl_1' is already running and cannot be relaunched.
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sat Oct 21 18:49:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct 21 18:49:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/synth_1/runme.log
+[Sat Oct 21 18:49:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sat Oct 21 18:52:03 2023] Launched impl_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct 21 18:52:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/synth_1/runme.log
+[Sat Oct 21 18:52:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/runme.log
+set_property is_enabled false [get_files  C:/Users/HP/Desktop/lab5/MouseReceiver.xdc]
+set_property is_enabled true [get_files  C:/Users/HP/Desktop/lab5/KeyboardSim.xdc]
+set_property top keyboard [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct 21 18:57:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/synth_1/runme.log
+[Sat Oct 21 18:57:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 2494.156 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292743884A
+set_property PROGRAM.FILE {C:/Users/HP/Desktop/lab5/lab5/lab5.runs/impl_1/keyboard.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'refresh_hw_device' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 21 19:04:30 2023...

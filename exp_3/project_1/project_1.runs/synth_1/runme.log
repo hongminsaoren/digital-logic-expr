@@ -1,0 +1,268 @@
+
+*** Running vivado
+    with args -log ALU32_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU32_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source ALU32_top.tcl -notrace
+Command: synth_design -top ALU32_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21016
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1005.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ALU32_top' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_top.v:23]
+	Parameter update_interval bound to: 119999 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ALU32' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:39]
+WARNING: [Synth 8-567] referenced signal 'dataa' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:38]
+WARNING: [Synth 8-567] referenced signal 'datab' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:38]
+INFO: [Synth 8-6157] synthesizing module 'Adder32' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:23]
+WARNING: [Synth 8-567] referenced signal 'y' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:33]
+INFO: [Synth 8-6157] synthesizing module 'CLA_16' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:56]
+INFO: [Synth 8-6157] synthesizing module 'CLA_group' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:73]
+INFO: [Synth 8-6157] synthesizing module 'FA_PG' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'FA_PG' (1#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:102]
+INFO: [Synth 8-6157] synthesizing module 'CLU' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'CLU' (2#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_group' (3#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_16' (4#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'Adder32' (5#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'sub' does not match port width (1) of module 'Adder32' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:54]
+INFO: [Synth 8-6157] synthesizing module 'barrelsft32' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/barrelsft32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'barrelsft32' (6#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/barrelsft32.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'LR' does not match port width (1) of module 'barrelsft32' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:55]
+WARNING: [Synth 8-689] width (32) of port connection 'AL' does not match port width (1) of module 'barrelsft32' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:55]
+WARNING: [Synth 8-567] referenced signal 'dataa' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:58]
+WARNING: [Synth 8-567] referenced signal 'OPctr' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:71]
+WARNING: [Synth 8-567] referenced signal 'SIG' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:71]
+WARNING: [Synth 8-567] referenced signal 'com' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:71]
+WARNING: [Synth 8-567] referenced signal 'dataa' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:71]
+WARNING: [Synth 8-567] referenced signal 'datab' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:71]
+WARNING: [Synth 8-567] referenced signal 'temp' should be on the sensitivity list [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'ALU32' (7#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:23]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_top.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'ALU32_top' (8#1) [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1005.184 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_top.xdc]
+Finished Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALU32_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALU32_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1011.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1011.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1011.262 ; gain = 6.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1011.262 ; gain = 6.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1011.262 ; gain = 6.078
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'SIG_reg' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'OPctr_reg' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'sub_reg' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'LR_reg' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'AL_reg' [S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1011.262 ; gain = 6.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 32    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 19    
+	  12 Input   32 Bit        Muxes := 3     
+	   8 Input    8 Bit        Muxes := 1     
+	  12 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	  12 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1011.262 ; gain = 6.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1011.262 ; gain = 6.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1011.262 ; gain = 6.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1026.957 ; gain = 21.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    38|
+|4     |LUT2   |    17|
+|5     |LUT3   |    41|
+|6     |LUT4   |   111|
+|7     |LUT5   |    54|
+|8     |LUT6   |   177|
+|9     |MUXF7  |    14|
+|10    |FDRE   |    78|
+|11    |FDSE   |     8|
+|12    |LD     |    11|
+|13    |IBUF   |    13|
+|14    |OBUF   |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:28 . Memory (MB): peak = 1029.039 ; gain = 17.777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1029.039 ; gain = 23.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1040.066 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1041.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  LD => LDCE: 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1041.277 ; gain = 36.094
+INFO: [Common 17-1381] The checkpoint 'S:/univer/sem2_1/digital_experiment/exp_3/project_1/project_1.runs/synth_1/ALU32_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ALU32_top_utilization_synth.rpt -pb ALU32_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 10 15:50:11 2023...

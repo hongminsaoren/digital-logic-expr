@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.srcs/sources_1/new/KeyBoardSend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeyBoardSend
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.srcs/sim_1/new/KeyBoardReceiver_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeyBoardReceiver_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_5/project_5/lab5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0" \
+"../../../../Lab6_xterm.gen/sources_1/ip/vga_mem/sim/vga_mem.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/Cal_Addr.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/FontLibrary_ASCII.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/VGACtrl.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/VGADisplay.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/VGADraw.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/VMemCtrl.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/VedioMem.v" \
+"../../../../Lab6_xterm.srcs/sources_1/new/keyboard.v" \
+"../../../../../lab6/xterm.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

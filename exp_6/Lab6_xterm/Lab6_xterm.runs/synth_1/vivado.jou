@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov  1 10:27:22 2023
+# Process ID: 41640
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1
+# Command line: vivado.exe -log xterm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xterm.tcl
+# Log file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/xterm.vds
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source xterm.tcl -notrace

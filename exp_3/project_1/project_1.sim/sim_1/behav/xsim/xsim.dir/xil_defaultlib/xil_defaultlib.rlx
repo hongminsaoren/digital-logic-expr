@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32.v,1696919379,verilog,,S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v,,ALU32,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_tb.v,1696143092,verilog,,,,ALU32_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32.v,1696846488,verilog,,S:/univer/sem2_1/digital_experiment/exp_3/lab3/barrelsft32.v,,Adder32;CLA_16;CLA_group;CLU;FA_PG,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_3/lab3/Adder32_tb.v,1696234826,verilog,,,,Adder32_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_3/lab3/barrelsft32.v,1696254443,verilog,,S:/univer/sem2_1/digital_experiment/exp_3/lab3/ALU32_tb.v,,barrelsft32,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_3/lab3/barrelsft32_tb.v,1696253331,verilog,,,,barrelsft32_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_3/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct 23 20:21:10 2023
+# Process ID: 12220
+# Current directory: C:/Users/HP/Desktop/lab5/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1136 C:\Users\HP\Desktop\lab5\lab5\lab5.xpr
+# Log file: C:/Users/HP/Desktop/lab5/lab5/vivado.log
+# Journal file: C:/Users/HP/Desktop/lab5/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/HP/Desktop/lab5/lab5/lab5.xpr
+update_compile_order -fileset sources_1

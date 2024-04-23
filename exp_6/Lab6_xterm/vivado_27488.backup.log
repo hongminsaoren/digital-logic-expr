@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 31 12:17:32 2023
+# Process ID: 27488
+# Current directory: G:/FPGA_Labs/Lab6/Lab6_xterm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15924 G:\FPGA_Labs\Lab6\Lab6_xterm\Lab6_xterm.xpr
+# Log file: G:/FPGA_Labs/Lab6/Lab6_xterm/vivado.log
+# Journal file: G:/FPGA_Labs/Lab6/Lab6_xterm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/FPGA_Labs/Lab6/Lab6_xterm/Lab6_xterm.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'G:/FPGA_Labs/Lab6/Lab6_xterm/Lab6_xterm.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 12:43:06 2023...

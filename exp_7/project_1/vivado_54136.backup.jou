@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 14 15:11:08 2023
+# Process ID: 54136
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_7/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent53928 S:\univer\sem2_1\digital_experiment\exp_7\project_1\project_1.xpr
+# Log file: S:/univer/sem2_1/digital_experiment/exp_7/project_1/vivado.log
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_7/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/univer/sem2_1/digital_experiment/exp_7/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/cache_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/datamem.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/datamem128K.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/mem32b.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/mem32b_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/mem8b.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/seg7decimal.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/86150/Desktop/新建文件夹/lab7/cache_top.v C:/Users/86150/Desktop/新建文件夹/lab7/datamem.v C:/Users/86150/Desktop/新建文件夹/lab7/datamem128K.v C:/Users/86150/Desktop/新建文件夹/lab7/mem32b.v C:/Users/86150/Desktop/新建文件夹/lab7/mem32b_top.v C:/Users/86150/Desktop/新建文件夹/lab7/mem8b.v C:/Users/86150/Desktop/新建文件夹/lab7/seg7decimal.v}
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/cache_tb1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/men32b_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/Users/86150/Desktop/新建文件夹/lab7/cache_tb1.v C:/Users/86150/Desktop/新建文件夹/lab7/men32b_tb.v}
+add_files -norecurset_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_7/project_1/project_1.runs/impl_1/mem32b_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+er/sem2_1/digital_experiment/exp_7/lab7/cache.v S:/univer/sem2_1/digital_experiment/exp_7/lab7/datamem.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files S:/univer/sem2_1/digital_experiment/exp_7/lab7/datamem.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/univer/sem2_1/digital_experiment/exp_7/lab7/datamem128K.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/univer/sem2_1/digital_experiment/exp_7/lab7/registerfile.v] -no_script -reset -force -quiet
+remove_files  {S:/univer/sem2_1/digital_experiment/exp_7/lab7/datamem.v S:/univer/sem2_1/digital_experiment/exp_7/lab7/datamem128K.v S:/univer/sem2_1/digital_experiment/exp_7/lab7/registerfile.v}
+export_ip_user_files -of_objects  [get_files S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/86150/Desktop/新建文件夹/lab7/mem32b_top.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc C:/Users/86150/Desktop/新建文件夹/lab7/mem32b_top.xdc}
+add_files -fileset constrs_1 -norecurse {S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc S:/univer/sem2_1/digital_experiment/exp_7/lab7/mem32b_top.xdc}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {S:/univer/sem2_1/digital_experiment/exp_7/lab7/men32b_tb.v S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache_tb.v}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cache_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mem32b_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source cache_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {1s} -objects [get_filesets sim_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+open_run impl_1
+close_sim

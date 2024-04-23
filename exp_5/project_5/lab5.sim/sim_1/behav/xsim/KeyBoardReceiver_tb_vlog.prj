@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../lab5/KeyBoardReceiver.v" \
+"../../../../lab5.srcs/sources_1/new/KeyBoardSend.v" \
+"../../../../../lab5/MouseReceiver.v" \
+"../../../../lab5.srcs/sim_1/new/KeyBoardReceiver_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

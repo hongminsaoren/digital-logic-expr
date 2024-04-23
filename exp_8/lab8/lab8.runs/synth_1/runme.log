@@ -1,0 +1,498 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 62256
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1010.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SingleCycleCPU' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v:3]
+WARNING: [Synth 8-151] case item 7'b0010111 is unreachable [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v:20]
+INFO: [Synth 8-155] case statement is not full and has no default [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (1#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'BranchControl' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/BranchControl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'BranchControl' (2#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/BranchControl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile32' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/regfile32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile32' (3#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/regfile32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'InstrToImm' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrToImm.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'InstrToImm' (4#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrToImm.v:4]
+INFO: [Synth 8-6157] synthesizing module 'InstrParse' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrParse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'InstrParse' (5#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/InstrParse.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU32' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder32' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA_16' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:43]
+INFO: [Synth 8-6157] synthesizing module 'CLA_group' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:59]
+INFO: [Synth 8-6157] synthesizing module 'FA_PG' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'FA_PG' (6#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:89]
+INFO: [Synth 8-6157] synthesizing module 'CLU' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'CLU' (7#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_group' (8#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_16' (9#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'Adder32' (10#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Adder32.v:23]
+WARNING: [Synth 8-7071] port 'cout' of module 'Adder32' is unconnected for instance 'my_adder' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v:19]
+WARNING: [Synth 8-7023] instance 'my_adder' of module 'Adder32' has 9 connections declared, but only 8 given [S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v:19]
+INFO: [Synth 8-6157] synthesizing module 'barrelsft32' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/barrelsft32.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'barrelsft32' (11#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/barrelsft32.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ALUcontrol' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/ALUcontrol.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUcontrol' (12#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/ALUcontrol.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux_3to8' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/mux_3to8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux_3to8' (13#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/mux_3to8.v:23]
+WARNING: [Synth 8-7071] port 'data8' of module 'mux_3to8' is unconnected for instance 'm38' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v:24]
+WARNING: [Synth 8-7023] instance 'm38' of module 'mux_3to8' has 10 connections declared, but only 9 given [S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ALU32' (14#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nextPC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/nextPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'nextPC' (15#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/nextPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SingleCycleCPU' (16#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nstrMem' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:142]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'C:/Users/HP/Desktop/lab8/lab8.sim/sim_1/behav/xsim/gr.hex'; please make sure the file is added to project and has read permission, ignoring [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:149]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'nstrMem' (17#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:142]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (18#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (16) of module 'DataMem' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:49]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:61]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:84]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (19#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:61]
+WARNING: [Synth 8-7071] port 'dp' of module 'seg7decimal' is unconnected for instance 'sevenSeg' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-7023] instance 'sevenSeg' of module 'seg7decimal' has 5 connections declared, but only 4 given [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[0]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[1]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[2]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[3]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[4]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[5]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[6]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[7]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[8]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[9]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[10]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[11]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[12]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[13]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[14]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[15]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[0]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[1]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[2]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[3]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[4]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[5]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[6]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[7]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[8]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[9]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[10]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[11]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[12]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[13]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[14]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[15]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 1st driver pin 'top:/regfiles[1]_inferred__0/out[16]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-52.12 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[0]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[1]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[2]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[3]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[4]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[5]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[6]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[7]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[8]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[9]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[10]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[11]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[12]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'GND' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[13]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[14]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[15]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 1st driver pin 'top:/mydatamem/dataout[16]' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 with 2nd driver pin 'VCC' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v-41.20 is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'top' (20#1) [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 1188.461 ; gain = 178.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1188.461 ; gain = 178.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1188.461 ; gain = 178.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.872 . Memory (MB): peak = 1188.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/constrs_1/new/toop.xdc]
+Finished Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/constrs_1/new/toop.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.srcs/constrs_1/new/toop.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1779.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1779.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:01:14 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:01:14 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:14 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'ALUctr_reg' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/Control.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'data7_reg' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/ALU32.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'datab_reg' [S:/univer/sem2_1/digital_experiment/exp_8/lab8/SingleCycleCPU.v:69]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:02:51 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 32    
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 33    
+	                4 Bit    Registers := 1     
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 60    
+	   4 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 3     
+	  16 Input    3 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 5     
+	   7 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6850] RAM (mydatamem/ram_reg) has partial Byte Wide Write Enable pattern with ram_style = "block", however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[31] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[30] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[29] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[28] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[27] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[26] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[25] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[24] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[23] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[22] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[21] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[20] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[19] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[18] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[17] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[16] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[15] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[14] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[13] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[12] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[11] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[10] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[9] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[8] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[7] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[6] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[5] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[4] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[3] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[2] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[1] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataMemdataout[0] is connected to at least one constant driver which has been preserved, other driver is ignored [S:/univer/sem2_1/digital_experiment/exp_8/lab8/DataMem.v:16]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:53 ; elapsed = 00:04:03 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:04:10 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:04:10 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:04:11 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT2   |     2|
+|5     |LUT3   |    10|
+|6     |LUT4   |     7|
+|7     |FDRE   |  1048|
+|8     |IBUF   |     2|
+|9     |OBUF   |    31|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:29 ; elapsed = 00:03:45 . Memory (MB): peak = 1779.816 ; gain = 178.066
+Synthesis Optimization Complete : Time (s): cpu = 00:01:58 ; elapsed = 00:04:15 . Memory (MB): peak = 1779.816 ; gain = 769.422
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1779.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'regfile32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1779.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 14 Warnings, 198 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:01 ; elapsed = 00:04:22 . Memory (MB): peak = 1779.816 ; gain = 769.422
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'S:/univer/sem2_1/digital_experiment/exp_8/lab8/lab8.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 28 15:25:01 2023...

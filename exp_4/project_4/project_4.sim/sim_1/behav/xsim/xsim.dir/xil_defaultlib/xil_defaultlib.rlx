@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/div_32u.v,1697180841,verilog,,S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32b.v,,div_32u,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/div_32u_tb.v,1697180507,verilog,,,,div_32u_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32b.v,1697166438,verilog,,S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v,,mul_32b,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32b_tb.v,1697165397,verilog,,,,mul_32b_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v,1697184950,verilog,,S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v,,mul_32k,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k_tb.v,1696216498,verilog,,,,mul_32k_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v,1697527724,verilog,,S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_tb.v,,rv32m,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_tb.v,1696488666,verilog,,,,rv32m_tb,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_4/project_4/project_4.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

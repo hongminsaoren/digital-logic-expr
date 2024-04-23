@@ -1,0 +1,372 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov  1 10:27:22 2023
+# Process ID: 41640
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1
+# Command line: vivado.exe -log xterm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xterm.tcl
+# Log file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/xterm.vds
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source xterm.tcl -notrace
+Command: synth_design -top xterm -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35200
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1008.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xterm' [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:103]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:22]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:45]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (1#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:22]
+WARNING: [Synth 8-689] width (32) of port connection 'dp' does not match port width (1) of module 'seg7decimal' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:151]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:151]
+INFO: [Synth 8-6157] synthesizing module 'scancode_ram' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:292]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:307]
+INFO: [Synth 8-226] default block is never used [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:834]
+INFO: [Synth 8-6155] done synthesizing module 'scancode_ram' (2#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:292]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:238]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (3#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:238]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (4#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v:103]
+WARNING: [Synth 8-689] width (1) of port connection 'LED' does not match port width (16) of module 'keyboard' [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:48]
+WARNING: [Synth 8-7071] port 'clk' of module 'keyboard' is unconnected for instance 'mykey' [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:40]
+WARNING: [Synth 8-7071] port 'keyin' of module 'keyboard' is unconnected for instance 'mykey' [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:40]
+WARNING: [Synth 8-7023] instance 'mykey' of module 'keyboard' has 10 connections declared, but only 8 given [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:40]
+INFO: [Synth 8-6157] synthesizing module 'VGADisplay' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADisplay.v:22]
+INFO: [Synth 8-3876] $readmem data file 'S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Text.txt' is read successfully [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADisplay.v:93]
+INFO: [Synth 8-6157] synthesizing module 'VGACtrl' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGACtrl.v:22]
+	Parameter H_Sync_Width bound to: 96 - type: integer 
+	Parameter H_Back_Porche bound to: 48 - type: integer 
+	Parameter H_Active_Pixels bound to: 640 - type: integer 
+	Parameter H_Front_Porch bound to: 16 - type: integer 
+	Parameter H_Totals bound to: 800 - type: integer 
+	Parameter V_Sync_Width bound to: 2 - type: integer 
+	Parameter V_Back_Porche bound to: 33 - type: integer 
+	Parameter V_Active_Pixels bound to: 480 - type: integer 
+	Parameter V_Front_Porch bound to: 10 - type: integer 
+	Parameter V_Totals bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGACtrl' (5#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGACtrl.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Cal_Addr' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/Cal_Addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Cal_Addr' (6#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/Cal_Addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VMemCtrl' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VMemCtrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VMemCtrl' (7#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VMemCtrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VedioMem' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VedioMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VedioMem' (8#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VedioMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGADraw' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADraw.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'VGADraw' (9#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADraw.v:22]
+INFO: [Synth 8-6157] synthesizing module 'vga_mem' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/.Xil/Vivado-41640-wcx/realtime/vga_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vga_mem' (10#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/.Xil/Vivado-41640-wcx/realtime/vga_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FontLibrary_ASCII' [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/FontLibrary_ASCII.v:23]
+INFO: [Synth 8-3876] $readmem data file 'S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/ASCout.txt' is read successfully [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/FontLibrary_ASCII.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'FontLibrary_ASCII' (11#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/FontLibrary_ASCII.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGADisplay' (12#1) [S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADisplay.v:22]
+WARNING: [Synth 8-7071] port 'keyin' of module 'VGADisplay' is unconnected for instance 'myvga' [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:68]
+WARNING: [Synth 8-7023] instance 'myvga' of module 'VGADisplay' has 9 connections declared, but only 8 given [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xterm' (13#1) [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1008.828 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [s:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.gen/sources_1/ip/vga_mem/vga_mem/vga_mem_in_context.xdc] for cell 'myvga/my_pic'
+Finished Parsing XDC File [s:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.gen/sources_1/ip/vga_mem/vga_mem/vga_mem_in_context.xdc] for cell 'myvga/my_pic'
+Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.xdc]
+Finished Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xterm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xterm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1065.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1065.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1065.734 ; gain = 56.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1065.734 ; gain = 56.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for myvga/my_pic. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1065.734 ; gain = 56.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "VedioMem:/VMem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1065.734 ; gain = 56.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 3     
+	   3 Input    8 Bit       Adders := 2     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 19    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 16    
++---RAMs : 
+	              32K Bit	(4096 X 8 bit)          RAMs := 1     
+	              384 Bit	(32 X 12 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 14    
+	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 52    
+	 256 Input    7 Bit        Muxes := 2     
+	 257 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 58    
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP ram_addr, operation Mode is: C+A*(B:0x280).
+DSP Report: operator ram_addr is absorbed into DSP ram_addr.
+DSP Report: operator ram_addr0 is absorbed into DSP ram_addr.
+INFO: [Synth 8-3971] The signal "xterm/myvga/myVMem/VMem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1065.734 ; gain = 56.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------------+--------------+---------------+----------------+
+|Module Name       | RTL Object   | Depth x Width | Implemented As | 
++------------------+--------------+---------------+----------------+
+|FontLibrary_ASCII | p_0_out      | 4096x8        | LUT            | 
+|VGADisplay        | txtascii_reg | 4096x8        | Block RAM      | 
+|VGADisplay        | p_0_out      | 4096x8        | LUT            | 
++------------------+--------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives  | 
++------------+-----------------------+-----------+----------------------+-------------+
+|xterm       | myvga/myvc/enters_reg | Implied   | 32 x 12              | RAM32M x 2	 | 
++------------+-----------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|VGADisplay  | C+A*(B:0x280) | 12     | 10     | 12     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:37 . Memory (MB): peak = 1070.098 ; gain = 61.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.676 ; gain = 81.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
+-------NONE-------
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives  | 
++------------+-----------------------+-----------+----------------------+-------------+
+|xterm       | myvga/myvc/enters_reg | Implied   | 32 x 12              | RAM32M x 2	 | 
++------------+-----------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance myvga/myVMem/VMem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance myvga/myVMem/VMem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance myvga/txtascii_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 1101.578 ; gain = 92.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.148 ; gain = 103.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.148 ; gain = 103.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.148 ; gain = 103.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.148 ; gain = 103.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.219 ; gain = 103.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.219 ; gain = 103.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vga_mem       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |vga_mem  |     1|
+|2     |BUFG     |     3|
+|3     |CARRY4   |    69|
+|4     |DSP48E1  |     1|
+|5     |LUT1     |    75|
+|6     |LUT2     |   132|
+|7     |LUT3     |    96|
+|8     |LUT4     |    86|
+|9     |LUT5     |   111|
+|10    |LUT6     |   751|
+|11    |MUXF7    |   190|
+|12    |RAM32M   |     2|
+|13    |RAMB36E1 |     3|
+|15    |FDRE     |   280|
+|16    |FDSE     |    12|
+|17    |IBUF     |     4|
+|18    |OBUF     |    29|
+|19    |OBUFT    |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.219 ; gain = 103.391
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:40 . Memory (MB): peak = 1112.219 ; gain = 46.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1112.219 ; gain = 103.391
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1124.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 265 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1125.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:56 . Memory (MB): peak = 1125.883 ; gain = 117.055
+INFO: [Common 17-1381] The checkpoint 'S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/xterm.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xterm_utilization_synth.rpt -pb xterm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  1 10:28:21 2023...

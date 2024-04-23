@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov  1 10:22:36 2023
+# Process ID: 30228
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3344 S:\univer\sem2_1\digital_experiment\exp_6\Lab6_xterm\Lab6_xterm.xpr
+# Log file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/vivado.log
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+wait_on_run synth_1
+open_run synth_1 -name synth_1

@@ -1,0 +1,15 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.gen/sources_1/ip/vga_mem/sim/vga_mem.v,1698739547,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/Cal_Addr.v,,vga_mem,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/Cal_Addr.v,1698486370,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/FontLibrary_ASCII.v,,Cal_Addr,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/FontLibrary_ASCII.v,1698740261,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGACtrl.v,,FontLibrary_ASCII,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGACtrl.v,1698732690,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADisplay.v,,VGACtrl,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADisplay.v,1698740222,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADraw.v,,VGADisplay,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VGADraw.v,1698734806,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VMemCtrl.v,,VGADraw,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VMemCtrl.v,1698736744,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VedioMem.v,,VMemCtrl,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/VedioMem.v,1698738050,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v,,VedioMem,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/new/keyboard.v,1698671620,verilog,,S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v,,keyboard;ps2_keyboard;scancode_ram;seg7decimal,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,
+S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.v,1698733714,verilog,,,,xterm,,,../../../../Lab6_xterm.gen/sources_1/ip/clk_wiz_0,,,,,

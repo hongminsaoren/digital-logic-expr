@@ -1,0 +1,192 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 31 15:49:47 2023
+# Process ID: 49944
+# Current directory: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent52668 S:\univer\sem2_1\digital_experiment\exp_6\Lab6_xterm\Lab6_xterm.xpr
+# Log file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/vivado.log
+# Journal file: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.xpr
+INFO: [Project 1-313] Project file moved from 'G:/FPGA_Labs/Lab6/Lab6_xterm' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'S:/univer/sem2_1/数逻实验/实验材料/lab6/xterm.v', nor could it be found using path 'G:/数逻实验/实验材料/lab6/xterm.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'S:/univer/sem2_1/数逻实验/实验材料/lab6/scancode_ram.v', nor could it be found using path 'G:/数逻实验/实验材料/lab6/scancode_ram.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'S:/univer/sem2_1/数逻实验/实验材料/lab6/xterm.xdc', nor could it be found using path 'G:/数逻实验/实验材料/lab6/xterm.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 16:03:56 2023...
+验材料/lab6
+add_files -fileset constrs_1 -norecurse S:/univer/sem2_1/digital_experiment/exp_6/lab6/xterm.xdc
+export_ip_user_files -of_objects  [get_files S:/univer/sem2_1/数逻实验/实验材料/lab6/xterm.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 S:/univer/sem2_1/数逻实验/实验材料/lab6/xterm.xdc
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1
+
+reset_run vga_mem_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/vga_mem_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vga_mem'...
+[Tue Oct 31 15:52:03 2023] Launched vga_mem_synth_1, synth_1...
+Run output will be captured here:
+vga_mem_synth_1: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/vga_mem_synth_1/runme.log
+synth_1: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/runme.log
+[Tue Oct 31 15:52:03 2023] Launched impl_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1198.328 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1198.328 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744213A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292744213A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/xterm.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/xterm.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Tue Oct 31 15:59:54 2023] Launched synth_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/runme.log
+[Tue Oct 31 15:59:55 2023] Launched impl_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+set_property -dict [list CONFIG.Coe_File {S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe}] [get_ips vga_mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 's:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/image640x480-h.coe' provided. It will be converted relative to IP Instance files '../../../../image640x480-h.coe'
+generate_target all [get_files  S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/ip/vga_mem/vga_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'vga_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vga_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'vga_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'vga_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'vga_mem'...
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 2643.508 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all vga_mem] }
+export_ip_user_files -of_objects [get_files S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/ip/vga_mem/vga_mem.xci] -no_script -sync -force -quiet
+reset_run vga_mem_synth_1
+launch_runs vga_mem_synth_1 -jobs 14
+[Tue Oct 31 16:05:47 2023] Launched vga_mem_synth_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/vga_mem_synth_1/runme.log
+export_simulation -of_objects [get_files S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.srcs/sources_1/ip/vga_mem/vga_mem.xci] -directory S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.ip_user_files/sim_scripts -ip_user_files_dir S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.ip_user_files -ipstatic_source_dir S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.ip_user_files/ipstatic -lib_map_path [list {modelsim=S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.cache/compile_simlib/modelsim} {questa=S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.cache/compile_simlib/questa} {riviera=S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.cache/compile_simlib/riviera} {activehdl=S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Tue Oct 31 16:05:57 2023] Launched vga_mem_synth_1, synth_1...
+Run output will be captured here:
+vga_mem_synth_1: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/vga_mem_synth_1/runme.log
+synth_1: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/runme.log
+[Tue Oct 31 16:05:57 2023] Launched impl_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/xterm.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292744213A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744213A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+export_ip_user_files -of_objects  [get_files S:/univer/sem2_1/数逻实验/实验材料/lab6/scancode_ram.v] -no_script -reset -force -quiet
+remove_files  S:/univer/sem2_1/数逻实验/实验材料/lab6/scancode_ram.v
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Tue Oct 31 16:12:21 2023] Launched impl_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/xterm.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/xterm.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Tue Oct 31 16:17:46 2023] Launched synth_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/synth_1/runme.log
+[Tue Oct 31 16:17:46 2023] Launched impl_1...
+Run output will be captured here: S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/univer/sem2_1/digital_experiment/exp_6/Lab6_xterm/Lab6_xterm.runs/impl_1/xterm.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 16:30:04 2023...

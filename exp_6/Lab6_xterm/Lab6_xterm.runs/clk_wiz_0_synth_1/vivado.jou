@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 31 13:32:24 2023
+# Process ID: 22072
+# Current directory: G:/FPGA_Labs/Lab6/Lab6_xterm/Lab6_xterm.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: G:/FPGA_Labs/Lab6/Lab6_xterm/Lab6_xterm.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: G:/FPGA_Labs/Lab6/Lab6_xterm/Lab6_xterm.runs/clk_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

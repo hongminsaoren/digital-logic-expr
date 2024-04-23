@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_4/lab4/div_32u.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div_32u
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_32b
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_4/lab4/mul_32k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_32k
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32m
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32m_tb
+ERROR: [VRFC 10-1280] procedural assignment to a non-register In_valid is not permitted, left-hand side should be reg/integer/time/genvar [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_tb.v:140]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register In_valid is not permitted, left-hand side should be reg/integer/time/genvar [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_tb.v:141]
+ERROR: [VRFC 10-2865] module 'rv32m_tb' ignored due to previous errors [S:/univer/sem2_1/digital_experiment/exp_4/lab4/rv32m_tb.v:23]

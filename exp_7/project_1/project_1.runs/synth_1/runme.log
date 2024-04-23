@@ -1,0 +1,256 @@
+
+*** Running vivado
+    with args -log cache.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cache.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cache.tcl -notrace
+Command: synth_design -top cache -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 45148
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1008.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cache' [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.v:1]
+	Parameter LINE_ADDR_LEN bound to: 2 - type: integer 
+	Parameter SET_ADDR_LEN bound to: 3 - type: integer 
+	Parameter TAG_ADDR_LEN bound to: 7 - type: integer 
+	Parameter MEM_ADDR_LEN bound to: 12 - type: integer 
+	Parameter UNUSED_ADDR_LEN bound to: 18 - type: integer 
+	Parameter LINE_SIZE bound to: 4 - type: integer 
+	Parameter SET_SIZE bound to: 8 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter COMPARE bound to: 2'b01 
+	Parameter WRITEBACK bound to: 2'b10 
+	Parameter LOADMEM bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'main_mem' [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.v:170]
+
+*** Running vivado
+    with args -log cache.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cache.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cache.tcl -notrace
+Command: synth_design -top cache -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21616
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1004.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cache' [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.v:1]
+	Parameter LINE_ADDR_LEN bound to: 2 - type: integer 
+	Parameter SET_ADDR_LEN bound to: 3 - type: integer 
+	Parameter TAG_ADDR_LEN bound to: 7 - type: integer 
+	Parameter MEM_ADDR_LEN bound to: 12 - type: integer 
+	Parameter UNUSED_ADDR_LEN bound to: 18 - type: integer 
+	Parameter LINE_SIZE bound to: 4 - type: integer 
+	Parameter SET_SIZE bound to: 8 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter COMPARE bound to: 2'b01 
+	Parameter WRITEBACK bound to: 2'b10 
+	Parameter LOADMEM bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'main_mem' [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'main_mem' (1#1) [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'cache' (2#1) [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:24 ; elapsed = 00:02:42 . Memory (MB): peak = 2136.941 ; gain = 1132.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:02:51 . Memory (MB): peak = 2136.941 ; gain = 1132.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:29 ; elapsed = 00:02:51 . Memory (MB): peak = 2136.941 ; gain = 1132.793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2136.941 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc]
+WARNING: [Vivado 12-584] No ports matched 'switch[0]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[1]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[2]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[3]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[4]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[5]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[6]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[7]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[8]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[9]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[10]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[11]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[12]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[13]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[14]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[15]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[0]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[1]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[2]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[3]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[4]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[5]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[6]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DP'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [S:/univer/sem2_1/digital_experiment/exp_7/lab7/cache.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cache_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cache_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2809.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.693 . Memory (MB): peak = 2809.363 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:09 ; elapsed = 00:03:39 . Memory (MB): peak = 2809.363 ; gain = 1805.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:09 ; elapsed = 00:03:39 . Memory (MB): peak = 2809.363 ; gain = 1805.215
+---------------------------------------------------------------------------------

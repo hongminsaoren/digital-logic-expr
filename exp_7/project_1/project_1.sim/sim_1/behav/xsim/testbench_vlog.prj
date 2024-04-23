@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/86150/Desktop/新建文件夹/lab7/cache_top.v" \
+"C:/Users/86150/Desktop/新建文件夹/lab7/seg7decimal.v" \
+"C:/Users/86150/Desktop/新建文件夹/lab7/cache_tb1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

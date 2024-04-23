@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/univer/sem2_1/digital_experiment/exp_2/lab2/encryption6b.v" into library xil_defaultlib
+ERROR: [VRFC 10-8386] root scope declaration is not allowed in Verilog 95/2K mode [S:/univer/sem2_1/digital_experiment/exp_2/lab2/encryption6b.v:21]
+ERROR: [VRFC 10-8386] root scope declaration is not allowed in Verilog 95/2K mode [S:/univer/sem2_1/digital_experiment/exp_2/lab2/encryption6b.v:22]
+ERROR: [VRFC 10-8386] root scope declaration is not allowed in Verilog 95/2K mode [S:/univer/sem2_1/digital_experiment/exp_2/lab2/encryption6b.v:23]
+INFO: [VRFC 10-311] analyzing module encryption6b
+ERROR: [VRFC 10-2865] module 'encryption6b' ignored due to previous errors [S:/univer/sem2_1/digital_experiment/exp_2/lab2/encryption6b.v:25]
